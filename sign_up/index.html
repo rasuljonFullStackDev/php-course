@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        html{
+            overflow-x: hidden;
+        }
+        .coreusel_item{
+            display:flex;
+            gap: 20px;
+            justify-content: center;
+       transition: all .3s ease-in-out;
+            align-items: center;
+        }
+        img{
+            background: cornflowerblue;
+            width: 300px;
+            /* display: inline-b; */
+            height: 300px;
+            margin: 10px;
+        }
+        .btn{
+            display: flex;
+            /* margin:auto; */
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+    <div class="coreusel_item">
+        <img src="./Bitmap (1).jpg" alt="">
+        <img src="./Bitmap (1).jpg" alt="">
+        <img src="./Bitmap (1).jpg" alt="">
+        <img src="./Bitmap (1).jpg" alt="">
+        <img src="./Bitmap (1).jpg" alt="">
+        <img src="./Bitmap (1).jpg" alt="">
+        <img src="./Bitmap (1).jpg" alt="">
+        <img src="./Bitmap (1).jpg" alt="">
+        <img src="./Bitmap (1).jpg" alt="">
+        <img src="./Bitmap (1).jpg" alt="">
+        <img src="./Bitmap (1).jpg" alt="">
+        <img src="./Bitmap (1).jpg" alt="">
+        <img src="./Bitmap (1).jpg" alt="">
+        <img src="./Bitmap (1).jpg" alt="">
+        <img src="./Bitmap (1).jpg" alt="">
+    </div>
+    <div class="btn">
+        <button class="left_btn"> left </button>
+        <button class="right_btn">right </button>
+    </div>
+</body>
+<script>
+    let block = document.querySelector(".coreusel_item"),
+        img = document.querySelector("img"),
+        left_btn = document.querySelector(".left_btn"),
+        right_btn = document.querySelector(".right_btn");
+        s=1;
+        // alert(img.width);
+        // alert()
+        // console.log(document.querySelector("html").style);
+        console.log(window.innerWidth);
+        right_btn.addEventListener("click", () =>{
+            ++s;
+           
+            block.style.transform = `translateX(${img.width * s + 20}px)`;
+            console.log(img.width * s + 10);
+        })
+        left_btn.addEventListener("click", () =>{
+            --s;
+            
+            block.style.transform = `translateX(${img.width * s + 20}px)`;
+            console.log(img.width * s);
+        })
+
+        
+</script>
+</html>

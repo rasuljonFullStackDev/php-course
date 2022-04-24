@@ -1,0 +1,53 @@
+number xususiyati
+typeof
+parseFloat
+parseInt
+toString
+string haqida tushuncha
+string uzunligi
+
+qidirish
+indexOf
+
+takrorlash
+padEnd
+'abc'.padEnd(6)
+'abc'.padEnd(10,"js")
+oriniga qoyish
+
+'abs'.replace('s','$')
+
+qirqish
+slice
+split
+substr
+substring
+
+harflarni katta yoki kichik yozish
+toLowerCase,toLocaleLowerCase /// kichkina harf
+toUpperCase,toLocaleUpperCase /// katta harf
+
+
+massivlarni kamchiliklari
+reverse() ///massivni teskari yozish
+berilgan indexlar orniga krsatilgan valueniqoyish
+raqam = [1,2,3,4]
+raqam.splice(3,2,"js")
+
+split orqali ajratilgan massivni birlashtirish
+join()
+
+/// for mavzusini kamchiliklarnitoldirish
+for(kalit in massiv){
+    console.log(massiv[kalit])
+
+}
+for (kalit of massiv){
+    console.log(kalit)
+}
+
+while
+do while ni takrorlash
+
+foreach ni tushuntirish
+funksiyalardan tushuncha berish
